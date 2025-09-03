@@ -31,7 +31,7 @@ def get_traj(args):
 
         try:
             agent_input = input_loader.get_agent_input_from_token(token)
-            trajectory = agent.compute_trajectory(agent_input, None, None)
+            trajectory = agent.compute_trajectory(agent_input)
             output.append([token, trajectory])
 
         except Exception:
